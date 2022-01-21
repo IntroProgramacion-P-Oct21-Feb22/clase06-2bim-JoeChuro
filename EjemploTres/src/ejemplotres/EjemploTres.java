@@ -18,12 +18,25 @@ public class EjemploTres {
      */
     public static void main(String[] args) {
         // 
-        int a = 20;
-        int b = 10;
-        System.out.println(NumberUtils.compare(a, b));
-        System.out.println( obtenerDecimal("10.2") + 20 );
-        System.out.printf("El número mayor es: %.2f\n", 
-                NumberUtils.max(10.2, 1.1, 4.2) );
+        int a = 10;
+        int b = 20;
+        int r = (NumberUtils.compare(a, b));
+        // System.out.println(NumberUtils.compare(a, b));
+        if (r == 1){
+            System.out.printf("El numero %s es mayor a %s", a, b);
+        }else{
+            if (r==0){
+                System.out.printf("El numero %s es igual a %s", a, b);
+            }else{
+                if(r==-1){
+                    System.out.printf("El numero %s es menor a %s", a, b);
+                }
+            }
+        }
+        
+        // System.out.println( obtenerDecimal("10.2") + 20 );
+        // System.out.printf("El número mayor es: %.2f\n", 
+        //        NumberUtils.max(10.2, 1.1, 4.2) );
     }
     
     public static double obtenerDecimal(String cadena){

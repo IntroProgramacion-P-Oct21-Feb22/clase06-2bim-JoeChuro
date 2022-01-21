@@ -6,14 +6,15 @@
 package paquetedos;
 
 
-import paqueteuno.Operador;
+import paquete04.OperadorUno;
+import paquete04.OperadorDos;
 
 public class Principal {
     
     public static void main(String[] args) {
-        int valorA = Operador.obtenerNumero();
-        int valorB = Operador.obtenerNumero();
-        int suma = Operador.obtenerSuma(valorA, valorB);
+        int valorA = OperadorUno.obtenerNumero();
+        int valorB = OperadorUno.obtenerNumero();
+        int suma = OperadorDos.obtenerSuma(valorA, valorB);
         System.out.printf("La suma de %d + %d es igual a: %d\n", 
                 valorA,
                 valorB,
